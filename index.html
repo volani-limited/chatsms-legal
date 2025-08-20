@@ -32,6 +32,10 @@
       font-weight: 600;
       margin-bottom: 0.5rem;
     }
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
     p, ul {
       margin-bottom: 1rem;
     }
@@ -81,8 +85,7 @@
   </ul>
 
   <h3>5. Disclaimer & Liability</h3>
-  <p>ChatSMS is provided “as-is.” We are not liable for damages, including SMS charges from your carrier or delays due to network conditions. Use at your own risk.<br>Furthermore, you agree that ChatSMS nor Volani Limited shall be held liable for any damages incurred whilst using our services. You agree, at your own expense, to idemnify ChatSMS, its parent, Volani Limited, and any affiliated persons, in any way related to your breach of these Terms, your use of our services, or any of your other acts.</p>
-
+  <p>ChatSMS is provided “as-is.” We are not liable for damages, including SMS charges from your carrier or delays due to network conditions. Use at your own risk.<br>Furthermore, you agree that ChatSMS nor Volani Limited shall be held liable for any damages incurred whilst using our services. You agree, at your own expense, to indemnify ChatSMS, its parent, Volani Limited, and any affiliated persons, in any way related to your breach of these Terms, your use of our services, or any of your other acts.</p>
 
   <h3>6. Changes to Terms</h3>
   <p>We may update these Terms occasionally. Continued use of the Service means you accept the updated Terms.</p>
@@ -96,46 +99,79 @@
   <h2>Privacy Policy</h2>
 
   <h3>1. Overview</h3>
-  <p>This Privacy Policy explains how ChatSMS (“we”, “our”, or “us”) handles your information.<br>We're registered with the UK data protection authority (the Information Commissioner's Office or ICO) under number ZB581020.</p>
+  <p>This Privacy Policy explains how ChatSMS (“we”, “our”, or “us”) handles your information.<br>
+  We're registered with the UK data protection authority (the Information Commissioner’s Office or ICO) under number ZB581020.</p>
 
   <h3>2. Information We Collect</h3>
   <ul>
-    <li><strong>Messages you send:</strong> We forward your SMS messages to the OpenAI API to generate replies. These are stored by us until you close your account or delete the chats, and stored by OpenAI for no more than 30 days.</li>
-    <li><strong>Your telephone number:</strong> We store the telephone number you use to contact us so that we can reply to you.</li>
-    <li><strong>Your email address:</strong> We store the email address you provide when topping-up your account. This is help resolve any billing issues.</li>
-    <li><strong>Usage data:</strong> We may collect aggregate statistics (e.g., number of messages sent, top-ups) to improve the Service.</li>
-    <li><strong>Support inquiries:</strong> If you contact us, we retain the conversation only as needed to assist.</li>
+    <li><strong>Messages you send:</strong> We forward your SMS messages to the OpenAI API to generate replies and retain them in your account so you can view your conversation history later. OpenAI stores messages for up to 30 days.</li>
+    <li><strong>Your telephone number:</strong> Stored so we can reply to you.</li>
+    <li><strong>Your email address:</strong> Stored when you top up your account, to manage billing and resolve issues.</li>
+    <li><strong>Usage data:</strong> Aggregate statistics (e.g., number of messages sent, top-ups) to improve the Service.</li>
+    <li><strong>Support inquiries:</strong> Retained only as long as necessary to assist you.</li>
   </ul>
 
-  <h3>3. Why We Collect Data</h3>
+  <h3>3. Why We Collect Data (Legal Bases)</h3>
   <ul>
-    <li>To process your messages through OpenAI and return a response.</li>
-    <li>To allow you to explore your chat history.</li>
-    <li>To manage account balances and top-ups.</li>
-    <li>To respond to support requests.</li>
+    <li><strong>Messages & account data:</strong> Necessary to perform our contract with you and to provide your chat history. OpenAI does not train its models on your data.</li>
+    <li><strong>Billing records:</strong> Necessary for contract and to comply with legal obligations (e.g. tax law).</li>
+    <li><strong>Usage statistics:</strong> Our legitimate interest in improving the Service.</li>
+    <li><strong>Support:</strong> Necessary for contract and our legitimate interest in resolving issues.</li>
+    <li><strong>Marketing (if you opt in):</strong> Based on your consent.</li>
   </ul>
 
-  <h3>4. Who Sees the Data</h3>
+  <h3>4. Retention of Data</h3>
   <ul>
-    <li><strong>OpenAI:</strong> Processes messages via their API (not used to train their models).</li>
-    <li><strong>Payment Processor:</strong> Sees only what is necessary to process payments.</li>
-    <li><strong>Internal Team:</strong> May access limited data for support or maintenance.</li>
+    <li><strong>Messages:</strong> Retained so you can view and manage your conversation history. You may delete individual chats at any time, or delete your account to remove all of your chats from our systems.</li>
+    <li><strong>Billing records:</strong> Retained for 6 years in line with UK accounting requirements.</li>
+    <li><strong>Support records:</strong> Up to 12 months after resolution.</li>
+    <li><strong>Usage statistics:</strong> Retained in aggregate only (non-identifiable).</li>
   </ul>
 
-  <h3>5. Data Security</h3>
-  <p>We use Firestore with built-in encryption at rest and TLS in transit. Industry-standard practices help protect your data.</p>
+  <h3>5. Deleting Your Data</h3>
+  <p>When you delete a chat or close your account, <strong>we remove all associated personal data we hold about you from our systems</strong> (including your messages, phone number, and account details), except where retention is required by law (e.g., billing records). Deleted items are removed from our active systems promptly and from backups in the normal course of our backup rotation.</p>
 
-  <h3>6. Your Rights</h3>
-  <p>If you are in a regulated region (e.g., UK/EU under GDPR), you may request access, correction, or deletion of your personal data by contacting us.</p>
+  <h3>6. Who Sees the Data</h3>
+  <ul>
+    <li><strong>OpenAI:</strong> Processes messages via their API. According to OpenAI’s API policy, messages are not used to train their models and are generally retained for up to 30 days for abuse monitoring.</li>
+    <li><strong>Payment Processor:</strong> Receives only necessary payment details.</li>
+    <li><strong>Google Firestore:</strong> Hosts our database, with encryption in transit and at rest.</li>
+    <li><strong>Internal team:</strong> Access limited to support and maintenance purposes.</li>
+  </ul>
 
-  <h3>7. External Links</h3>
-  <p>Our Service relies on third-party providers (OpenAI, Firestore, payment processors). Their privacy practices are outlined on their own websites.</p>
+  <h3>7. International Transfers</h3>
+  <p>Your data may be transferred outside the UK/EU (e.g., to OpenAI in the US or Firestore data centres). Where this occurs, we rely on UK adequacy regulations or UK-approved Standard Contractual Clauses (SCCs) to protect your data.</p>
 
-  <h3>8. Contact</h3>
-  <p>You can reach us at the “Contact Us” button on the ChatSMS website or email <a href="help@chatsms.uk">help@chatsms.uk</a>.</p>
+  <h3>8. Data Security</h3>
+  <p>We use Firestore with encryption at rest and TLS in transit. Access is limited to authorised personnel only. While no system is 100% secure, we follow industry-standard practices to safeguard data.</p>
+
+  <h3>9. Your Rights</h3>
+  <p>If you are in the UK/EU you have the right to:</p>
+  <ul>
+    <li>Access your data</li>
+    <li>Request correction or deletion</li>
+    <li>Request restriction of processing</li>
+    <li>Object to processing (e.g., statistics/legitimate interest)</li>
+    <li>Request data portability</li>
+    <li>Withdraw consent (where processing is based on consent)</li>
+    <li>Lodge a complaint with the ICO (<a href="https://ico.org.uk/make-a-complaint/">ico.org.uk</a>)</li>
+  </ul>
+  <p>You can exercise your rights by contacting us at <a href="mailto:help@chatsms.uk">help@chatsms.uk</a>.</p>
+
+  <h3>10. Children’s Data</h3>
+  <p>Our Service is not directed at children under 13. If you are under 13 (or 16 in some regions), you must have parental/guardian consent to use ChatSMS.</p>
+
+  <h3>11. Cookies</h3>
+  <p>We do not use cookies for tracking or advertising. If this changes, we will update this Policy and (where required) seek your consent.</p>
+
+  <h3>12. Changes to this Policy</h3>
+  <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you via email or SMS. The latest version is always available on this page.</p>
+
+  <h3>13. Contact</h3>
+  <p>You can reach us via the “Contact Us” button on the ChatSMS website or email <a href="mailto:help@chatsms.uk">help@chatsms.uk</a>.</p>
 
   <footer>
-    &copy; 2025 ChatSMS. All rights reserved.
+    &copy; 2025 ChatSMS, a service provided by Volani Limited. All rights reserved.
   </footer>
 
 </body>
